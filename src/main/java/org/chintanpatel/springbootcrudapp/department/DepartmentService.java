@@ -12,4 +12,6 @@ public interface DepartmentService {
     Optional<Department>getDepartmentById(Long departmentId);
 
     void deleteDepartmentById(Long departmentId);
+
+    boolean isDepartmentExist(String departmentName);
 }
