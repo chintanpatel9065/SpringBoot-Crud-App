@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="/">Department Management</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center mb-5">
+                <h1 class="display-4 fw-bolder">Welcome to Department Management System</h1>
+                <p class="lead fw-normal text-muted">
+                    Manage departments with complete data tracking and management.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-5 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-bold">Departments</h3>
+                        <p class="card-text">
+                            This is a simple Department Management System
+                            with basic CRUD operations for managing departments and data tracking.
+                        </p>
+                        <a th:href="@{/departments}" class="btn btn-success btn-lg">View Departments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
